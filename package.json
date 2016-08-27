@@ -1,0 +1,15 @@
+{
+	"name": "angular-flux-store",
+	"version": "0.1.0",
+	"keywords": [
+		"angular",
+		"flux",
+		"redux",
+		"store",
+		"service"
+	],
+	"author": "joaozitopolo",
+	"contributors": [
+	],
+	"dependencies": {}
+}
