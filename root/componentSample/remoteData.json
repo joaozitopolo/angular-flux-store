@@ -1,0 +1,9 @@
+{
+	"list": [
+		{ "product": "chocolate", "price": 1.22, "qt": 1 },
+		{ "product": "gelly", "price": 0.5 },
+		{ "product": "coke", "price": 1.0, "qt": 3 },
+		{ "product": "ice cream", "price": 1.22, "qt": 5 },
+		{ "product": "pie", "price": 2.4 }
+	]
+}
