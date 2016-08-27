@@ -2,7 +2,7 @@
 
 (function(angular) {
 	
-	var module = angular.module('fStoreService', []);
+	var module = angular.module('fStore', []);
 	
 	module.service('fStore', fStore);
     module.controller('fStoreController', ['fStore', fStoreBasicController]);
