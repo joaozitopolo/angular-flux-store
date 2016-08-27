@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="app">
+	<head>
+		<title>TODO supply a title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../lib/bootstrap.min-3.3.7.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body ng-cloak>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>angular-flux-store</h1>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- Example row of columns -->
+			<div class="row">
+				
+				<div class="col-md-4" ng-controller="firstController as c1" ng-init="c1.init()">
+					<h2>First Controller</h2>
+				</div>
+				
+				<div class="col-md-4" ng-controller="secondController as c2">
+					<h2>Second Controller</h2>
+				</div>
+				
+				<div class="col-md-4" ng-controller="otherController as c3">
+					<h2>Other Controller</h2>
+				</div>
+				
+			</div>
+			<hr>
+		</div>
+	</body>
+</html>
