@@ -1,7 +1,12 @@
-<table class="table">
+<table class="table table-condensed table-striped">
+	<tr>
+		<th>Product</th>
+		<th>Price</th>
+		<th>Qtde</th>
+	</tr>
 	<tr ng-repeat="item in $ctrl.data.list">
 		<td ng-bind="item.product"></td>
-		<td ng-bind="item.price"></td>
+		<td ng-bind="item.price | currency"></td>
 		<td ng-bind="item.qt"></td>
 	</tr>
 </table>

@@ -14,6 +14,8 @@
 	
 	module.component('mySummary', { templateUrl: 'mySummaryTemplate.html', controller: summaryController } );
 
+	module.component('myForm', { templateUrl: 'myFormTemplate.html', controller: formController } );
+
 	function loadController(fStore, $http) {
 		$http({ method: 'GET', url: 'remoteData.json' })
 		.then(function(result) {
@@ -22,9 +24,7 @@
 	}
 	
 	function summaryController(fStore) {
-		
 		var self = this;
-		
 		fStore.subscribe(function(data) {
 			var total = 0;
 			angular.forEach(data.list, function(item) {
@@ -34,6 +34,17 @@
 			});
 			self.total = total;
 		});
+	}
+	
+	function formController(fStore) {
+		var self = this;
+		self.item = {};
+		self.add = function() {
+			var list = fStore.get().list;
+			list.push(self.item);
+			fStore.update({ list: list });
+			self.item = {};
+		};
 	}
 	
 })(angular);
