@@ -53,8 +53,8 @@
 
     function fStoreBasicController(store) {
         var self = this;
-        self.$destroy = store.subscribe(function(data) { self.data = data; });
         self.update = function() { store.update(self.data); };
+        self.$onDestroy = store.subscribe(function(data) { self.data = data; });
     }
 	
 })(angular);
