@@ -17,8 +17,4 @@ Provides an Angular Service with Flux Store pattern.
 - Allows to use Flux Store pattern with Javascript EC5
 - Cares the data storage and updates, without overread angular watchers: the data only is replicated when the update() method is invoked.
 
-## Samples
-
-- The root/componentSample shows how to synchronize components, async calls ($http) and lists
-- The root/controllerSample shows how to share and update data with independent controllers
-
+## See the samples on home page
