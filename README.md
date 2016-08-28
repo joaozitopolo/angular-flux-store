@@ -1,7 +1,7 @@
 # angular-flux-store
 AngularJS 1.x Flux Store implementation - Javascript EC5
 
-see the [docs](https://joaozitopolo.github.io/angular-flux-store/)
+see the [home page](https://joaozitopolo.github.io/angular-flux-store/)
 
 Provides an Angular Service with Flux Store pattern.
 
